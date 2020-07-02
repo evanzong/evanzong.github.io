@@ -50,7 +50,7 @@ if (!window.Promise)
 <body>
 <div id="check_register"><div class="container-box"><div class="safe-img"><img src="./上海科技大学_files/title.png"></div> <div class="weui-cells weui-cells_form from-box" style="background: transparent;"><div class="weui-cell"><div class="weui-cell__hd"><label class="weui-label">单位名称 Company<span class="red">*</span></label></div> <div class="weui-cell__bd "><a href="javascript:;" style="overflow: hidden;"><input type="text" placeholder="请输入您所在单位" class="weui-input"></a></div></div> <div class="weui-cell"><div class="weui-cell__hd"><label class="weui-label">姓名 Name <span class="red">*</span></label></div> <div class="weui-cell__bd"><a href="javascript:;" id="tipname" style="overflow: hidden;"><input type="text" placeholder="请输入进校人员姓名" class="weui-input"></a></div></div> <div class="weui-cell"><div class="weui-cell__hd"><label class="weui-label">手机号 Mobile Number<span class="red">*</span></label></div> <div class="weui-cell__bd"><input type="tel" maxlength="11" minlength="11" placeholder="请输入进校人员手机号" class="weui-input"></div></div> <div class="weui-cell"><div class="weui-cell__hd"><label class="weui-label">车牌号码 License Plate Number</label></div> <div class="weui-cell__bd"><input type="text" placeholder="请输入进校车辆车牌号码" class="weui-input"></div></div> <div class="tip-font">※&nbsp;若无车辆或校内车辆已录入识牌系统的可不填，格式：沪A66666</div></div> <div class="safe-operation-box"><div class="weui-flex"><div class="weui-flex__item"><a href="javascript:;" id="tijiao_from" class="weui-btn btn-mainbg">提交</a></div></div></div> <div class="company-name"><img src="./上海科技大学_files/keda.png"></div></div></div>
 
-<script type="javascript">
+<script type="text/javascript">
 (function($) {
 //	localStorage.kachu_empid="";
 	
@@ -80,7 +80,7 @@ if (!window.Promise)
 						$.toast("请输入您的姓名", "text");
 						return;
 					}
-					if (!that.user_tel || that.user_tel.length != 11) {
+					if (!that.user_tel) {
 						$.toast("请输入正确手机号", "text");
 						return;
 					}
