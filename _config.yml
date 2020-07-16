@@ -1,0 +1,8 @@
+title: Evanzong.GitHub.io
+description: 安全通行登记
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
